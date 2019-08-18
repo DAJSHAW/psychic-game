@@ -16,24 +16,25 @@ $(document).ready(function(){
             var guess = prompt("Guess a letter");
             if (guess === null) {
                 break;
-            }   
+                }   
             } 
-            else if (guess.length !==1) {
+             elseif (guess.length !==1){
                     alert("Please enter a single letter.");
-                }
-                else {  
+                    }
+            //else {  
                     for (var k = 0; k < word,length; k++){
                         if (word[k] === guess){
                             answerArray[k] = guess;
                             remainingLetters--;
+                            alert(answerArray.join(" "));
+                            alert("Cool! The asnswer was"+word);
                         }
                     }            
                     
-                }    
+            }    //}    
                  
-}        
-                alert(answerArray.join(" "));
-                alert("Cool! The asnswer was"+word);
+,);        
+                
                     
                     
     
